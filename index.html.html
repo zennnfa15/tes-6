@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send The Song</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Pemutar Musik -->
+    <audio id="backgroundMusic" autoplay loop>
+    <source src="baground musik/background-music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+
+    <div class="container">
+        <h1>MENFESS AJAIB!</h1>
+        <form id="songForm">    
+            <label for="recipient">Nama Penerima:</label>
+            <input type="text" id="recipient" name="recipient" required>
+
+            <label for="message">Pesan mu:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="song">Link lagu:</label>
+            <input type="url" id="song" name="song" placeholder="https://open.spotify.com/song" required>
+
+            <button type="submit">Kirim pesan mu!</button>
+        </form>
+        <div id="output" class="hidden">
+            <h2>Lihat pesan mu!</h2>
+            <p><strong>Untuk:</strong> <span id="outputRecipient"></span></p>
+            <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+            <p><strong>Lagu:</strong> <a id="outputSong" href="#" target="_blank">Dengarkan disini!</a></p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
+<body style="background-image: url('background.jpg'); 
+             background-size: cover; 
+             background-position: center; 
+             background-repeat: no-repeat; 
+             margin: 0; 
+             height: 100vh;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
